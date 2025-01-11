@@ -1,0 +1,171 @@
+1.Explain type conversion with example.     (UQ-JAN 2024)
+A type conversion function is a function with the same name as the data type to which
+it converts.
+Eg:
+radius = input("Enter the radius: “)               ->3.2
+int(radius)                                                         ->3
+             int function converts a float to an int by truncation, not by rounding to the
+nearest whole number.
+
+2. Illustrate the use of range() in Python.      (UQ-JAN 2024)
+Ans: The range() function returns a sequence of numbers, mainly used when working with for loops.
+The range() function can be represented in three different ways, or you can think of them as three range() parameters:
+? range(stop_value) : starting from 0 by default, and increments by 1 (by default) upto stop_value
+? range(start_value, stop_value): This generates the sequence based on the start and stop value increments by 1 (by default).
+? range(start_value, stop_value, step_size):  It generates the sequence by incrementing the start value using the step size until it reaches the stop value.
+Eg: for i in range(6):
+              print(i)
+
+3. What is the output of the following print statement in Python?  (UQ-JUNE 2022)
+(a) print (9//2) (b) print (9/2)
+Ans:  (a) 4
+(b) 4.5
+
+4. Write the output of the following python statements :       .      (UQ-JUNE 2023)
+i) round(12.57) ii) 5//2 iii) int(6.5)
+Ansi) 13
+ii) 2
+ iii) 6
+
+5. What is the output of the following Python code. Justify your answer.     .      (UQ-MAY 2023) 
+x = 'abcd'
+for i in range(len(x)):
+print(i)
+Ans:      0
+1
+2
+3
+
+6. Write the syntax and semantics of the multiway-if statement.      (UQ-MAY 2023)
+Ans: Syntax:
+            if condition1:
+    # Block of code if condition1 is True
+elif condition2:
+    # Block of code if condition1 is False and condition2 is True
+elif condition3:
+    # Block of code if condition3 is True
+else:
+    # Block of code executed if all the above conditions are False
+Semantics:
+Evaluate if:
+Check the first condition. If True, execute its block and skip the rest.
+  Evaluate elif:
+Sequentially check elif conditions if the if condition is False. Execute the first True block and skip the rest.
+  Execute else:
+If none of the if or elif conditions are True, execute the else block as a fallback.
+
+If none of the if or elif conditions are True, execute the else block as a fallback.
+
+7. Enumerate the various selection structures and control statement types in Python
+and elucidate each with suitable examples.  (UQ-MAY 2024)
+Ans: Selection Structures – If-else, Match case
+       If statement: Used to execute a block of code if a condition is true.
+           Eg: x = 10
+   if x > 5:
+   	           print("x is greater than 5")
+        If-else statements:  The computer must pause to examine or test a condition. If the condition is true, the computer executes the first alternative action and
+skips the second alternative. If the condition is false, the computer skips the first alternative action and executes the second alternative.
+Eg: x = 3
+       if x > 5:
+    	print("x is greater than 5")
+        else:
+   	 print("x is less than or equal to 5")  
+         Multiway If statement: Used to test multiple conditions in sequence.
+          Eg: x = 10
+ if x < 5:
+  	      print("x is less than 5")
+ elif x == 10:
+   	           print("x is equal to 10")
+ else:
+             print("x is greater than 5 but not 10")   
+Match case:    A Python match-case statement takes an expression and compares its value to
+successive patterns given as one or more case blocks. Only the first pattern that matches gets executed.
+Eg: n = int(input("Enter the number: "))
+      match n:
+       case 0: print("Monday")
+                        print("x is less than or equal to 5")  
+         Multiway If statement: Used to test multiple conditions in sequence.
+          Eg: x = 10
+ if x < 5:
+  	      print("x is less than 5")
+ elif x == 10:
+   	           print("x is equal to 10")
+ else:
+             print("x is greater than 5 but not 10")   
+Match case:    A Python match-case statement takes an expression and compares its value to
+successive patterns given as one or more case blocks. Only the first pattern that matches gets executed.
+Eg: n = int(input("Enter the number: "))
+      match n:
+       case 0: print("Monday")
+ print("x is less than or equal to 5")  
+         Multiway If statement: Used to test multiple conditions in sequence.
+          Eg: x = 10
+ if x < 5:
+  	      print("x is less than 5")
+ elif x == 10:
+   	           print("x is equal to 10")
+ else:
+             print("x is greater than 5 but not 10")   
+Match case:    A Python match-case statement takes an expression and compares its value to
+successive patterns given as one or more case blocks. Only the first pattern that matches gets executed.
+Eg: n = int(input("Enter the number: "))
+      match n:
+       case 0: print("Monday")
+                       case 1: print("Tuesday")
+        case 2: print("Wednesday")
+        case 3: print("Thursday")
+         case 4: print("Friday")
+         case 5: print("Saturday")
+         case 6: print("Sunday")
+          case default: print("Invalid day number")
+Control Statements : For loop, While loop
+For loop: Used to iterate over a sequence. It can be written using range function ,ie,range()
+Eg: for i in range(5):
+ 	   print(i) 
+While Loop: Executes a block of code as long as a condition is true.
+Eg: x = 3
+      while x > 0:
+  	   print(x)
+       x += 1
+Loop control statements: 
+i)break statement: used to immediately exit a loop, even if the loop condition is still true.
+Eg:
+for i in range(5):                                              output
+    if i == 3:                                                          0
+        break                                                          1
+    print(i)                                                             2
+
+ii)continue statement: is used to skip the rest of the code inside the current loop iteration and move on to the next iteration of the loop.
+Eg:
+for i in range(5):                                                      output
+    if i == 3:                                                                 0
+        continue                                                                 1
+    print(i)					   2
+						    4
+iii)pass statement: is a placeholder used when a statement is required syntactically, but no action is needed.  It allows you to write empty blocks of code without causing an error.
+Eg: if num > 0:
+	print(“positive”)
+        else:
+                pass
+
+8. Let the variable x be "dog" and the variable y be "cat". Write the values returned
+by the following operations: a) x*4 + ' ' + 4*y b) x*len(x+y)  (UQ-MAY 2024)
+Ans: a)dogdogdogdog catcatcatcat
+           b)dogdogdogdogdogdog
+
+9. What will be the output if the following code fragments are executed?   (UQ-MAY 2024)
+for j in range(2,10,4):
+print(j)
+Ans: 2
+         6
+
+10. Jack says that he will not bother with analysis and design but proceed directly to coding his programs. Why is that not a good idea?     (UQ-JUNE 2023)
+Ans: Skipping analysis and design leads to:
+Unclear Requirements: The program may not meet user needs.
+         Poor Structure: Results in messy, unmaintainable code.
+         Increased Bugs: Overlooking potential issues leads to more errors.
+Time Wastage: Fixing problems later is more costly and time-consuming.
+Inefficiency: Lack of planning can result in redundant or poorly optimized code.
+Proper analysis and design ensure clarity, efficiency, and long-term success of the project.
+
+
